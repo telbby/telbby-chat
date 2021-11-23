@@ -1,8 +1,8 @@
 {
-  "name": "telbby-client-ui-sample",
+  "name": "telbby-service-client-sample",
   "version": "0.1.0",
-  "description": "telbby client ui sample",
-  "repository": "https://github.com/telbby/telbby-client-ui-sample",
+  "description": "telbby service client sample",
+  "repository": "https://github.com/telbby/telbby-service-client-sample",
   "license": "MIT",
   "private": true,
   "scripts": {
