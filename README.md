@@ -1,64 +1,11 @@
-# React Recoil Emotion Boilerplate
+# Telbby Client UI Sample
 
-React&TypeScript boilerplate using Recoil, Emotion. It was built using webpack and babel without CRA.
+<br />
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/22045163/141472494-00de9d64-1f05-4b1c-bb29-3f688368136c.png" alt="logo" width="150px" />
+</p>
 
-## Prerequisites
+This is Client UI Sample Repository of Telbby, a service that can be introduced into my project to exchange feedback with various users.
 
-- [Node.js](https://nodejs.org/)
-- [Yarn](https://yarnpkg.com/)
-
-## Features
-
-- [Recoil](https://recoiljs.org/)
-- [Emotion](https://emotion.sh/docs/introduction)
-- [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
-- [Webpack](https://webpack.js.org/) & [Babel](https://babeljs.io/)
-- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
-- [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-- [Husky](https://typicode.github.io/husky/#/) & [Lint-Staged](https://github.com/okonet/lint-staged)
-
-## Getting Started
-
-### Installation
-
-```bash
-$ npx degit https://github.com/telbby/react-recoil-emotion-boilerplate <project name>
-$ cd <project name>
-$ yarn install
-```
-
-### Development server
-
-Webpack dev server runs at `localhost:8080`.
-
-```bash
-$ yarn dev
-```
-
-### Production build
-
-Build outputs are created in `build`.
-
-```bash
-$ yarn build
-```
-
-### Test
-
-The test environment was built using the jest and react testing library.
-
-```bash
-$ yarn test
-$ yarn test:watch
-$ yarn test:coverage
-```
-
-### Lint
-
-It uses eslint and pretier and follows the rules of airbnb.
-
-```bash
-$ yarn lint
-$ yarn lint:fix
-$ yarn prettier:write
-```
+> [Go to Frontend Repository](https://github.com/telbby/telbby-frontend)  
+> [Go to Backend Repository](https://github.com/telbby/telbby-backend)
