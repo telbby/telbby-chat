@@ -6,11 +6,13 @@ import { ThemeProvider } from '@emotion/react';
 
 import App from './App';
 import theme from './styles/theme';
+import GlobalStyle from './styles/GlobalStyle';
 
 ReactDOM.render(
   <BrowserRouter>
     <RecoilRoot>
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
         <App />
       </ThemeProvider>
     </RecoilRoot>
