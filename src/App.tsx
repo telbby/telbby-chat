@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
-import TelbbyServiceClient from './components/TelbbyServiceClient';
+import TelbbyChat from './components/TelbbyChat';
 
 const App: FC = () => {
-  return <TelbbyServiceClient />;
+  return <TelbbyChat />;
 };
 
 export default App;
