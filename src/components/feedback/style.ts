@@ -1,6 +1,6 @@
 import { css, SerializedStyles, Theme } from '@emotion/react';
 
-export const feedbackListWrapper = css`
+export const feedbackListWrapperStyle = css`
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -8,7 +8,8 @@ export const feedbackListWrapper = css`
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  padding: 0 1rem;
+  margin: 0;
+  padding: 0 0.8rem;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -18,14 +19,14 @@ export const feedbackListWrapper = css`
   }
 `;
 
-export const feedbackTotalCount = (theme: Theme): SerializedStyles => css`
-  color: ${theme.colorSubLight};
+export const feedbackTotalCountStyle = css`
   font-size: 10px;
   text-decoration: underline;
   text-align: right;
+  padding: 1em;
 `;
 
-export const feedbackItemWrapper = css`
+export const feedbackItemWrapperStyle = css`
   width: 180px;
   height: 200px;
   box-sizing: border-box;
@@ -38,7 +39,7 @@ export const feedbackItemWrapper = css`
   padding: 1em;
 `;
 
-export const feedbackTitle = (theme: Theme): SerializedStyles => css`
+export const feedbackTitleStyle = (theme: Theme): SerializedStyles => css`
   font-size: 12px;
   color: ${theme.colorPrimary};
   overflow: hidden;
@@ -47,14 +48,14 @@ export const feedbackTitle = (theme: Theme): SerializedStyles => css`
   flex-shrink: 0;
 `;
 
-export const feedbackContents = css`
+export const feedbackContentsStyle = css`
   flex-grow: 1;
   word-wrap: break-word;
   overflow: hidden;
   line-height: 1.3em;
 `;
 
-export const feedbackUserName = (theme: Theme): SerializedStyles => css`
+export const feedbackUserNameStyle = (theme: Theme): SerializedStyles => css`
   text-align: right;
   direction: rtl;
   font-family: ${theme.fontCoding};

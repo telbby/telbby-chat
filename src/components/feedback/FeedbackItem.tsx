@@ -3,21 +3,21 @@ import React, { FC } from 'react';
 import type { Feedback } from '@/@types/project';
 
 import {
-  feedbackItemWrapper,
-  feedbackTitle,
-  feedbackContents,
-  feedbackUserName,
+  feedbackItemWrapperStyle,
+  feedbackTitleStyle,
+  feedbackContentsStyle,
+  feedbackUserNameStyle,
 } from './style';
 
 type FeedbackItemProps = Omit<Feedback, 'id'>;
 
 const FeedbackItem: FC<FeedbackItemProps> = ({ title, contents, userName }) => {
   return (
-    <div css={feedbackItemWrapper}>
-      <p css={feedbackTitle}>#{title}</p>
-      <p css={feedbackContents}>&quot;{contents}&quot;</p>
-      <p css={feedbackUserName}>{userName}</p>
-    </div>
+    <li css={feedbackItemWrapperStyle}>
+      <p css={feedbackTitleStyle}>#{title}</p>
+      <p css={feedbackContentsStyle}>&quot;{contents}&quot;</p>
+      <p css={feedbackUserNameStyle}>{userName}</p>
+    </li>
   );
 };
 
