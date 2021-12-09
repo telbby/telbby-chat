@@ -1,4 +1,5 @@
 import telbbyLogo from '../assets/images/logo.png';
+import jiyong from '../assets/images/jiyong.png';
 import type { Project } from '@/@types/project';
 
 import {
@@ -25,4 +26,16 @@ export const mockProejctFirst: Project = {
   primary: false,
   feedbackList: mockFeedbacks,
   totalFeedBackCount: 5,
+};
+
+export const mockProejctSecond: Project = {
+  name: 'happy-music',
+  description: `내가 좋아하는 음악
+  추천받고, 고르고, 모아서
+들어보자!`,
+  domain: 'asdfasdf',
+  image: jiyong,
+  primary: false,
+  feedbackList: mockFeedbacks,
+  totalFeedBackCount: 12,
 };

@@ -1,10 +1,13 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ThemeProvider } from '@emotion/react';
 
 import PresentationalMain from '@/components/Main/PresentationalMain';
 
-import { mockProejctFirst } from './fixture/project';
+import { mockProejctFirst, mockProejctSecond } from './fixture/project';
+import { subTheme } from '@/styles/theme';
+import GlobalStyle from '@/styles/GlobalStyle';
 
 export default {
   title: 'Main',
@@ -31,3 +34,17 @@ primaryMain.args = {
   project: mockProejctFirst,
   handleExit: () => {},
 };
+
+export const subMain = Template.bind({});
+subMain.args = {
+  project: mockProejctSecond,
+  handleExit: () => {},
+};
+subMain.decorators = [
+  (Story) => (
+    <ThemeProvider theme={subTheme}>
+      <GlobalStyle />
+      <Story />
+    </ThemeProvider>
+  ),
+];

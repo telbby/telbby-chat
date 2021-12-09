@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { useTheme } from '@emotion/react';
 
 import FeedbackItem from './FeedbackItem';
 import { feedbackListWrapperStyle, feedbackTotalCountStyle } from './style';
@@ -9,15 +8,12 @@ import type { Feedback } from '@/@types/project';
 type FeedbackListProps = {
   feedbacks: Feedback[];
   totalFeedBackCount: number;
-  primary: boolean;
 };
 
 const FeedbackList: FC<FeedbackListProps> = ({
   feedbacks,
-  primary,
   totalFeedBackCount,
 }) => {
-  const theme = useTheme();
   return (
     <div>
       <ul
@@ -35,14 +31,7 @@ const FeedbackList: FC<FeedbackListProps> = ({
           );
         })}
       </ul>
-      <p
-        css={[
-          feedbackTotalCountStyle,
-          { color: primary ? theme.colorSubLight : theme.colorSuccess },
-        ]}
-      >
-        누적 피드백 총 {totalFeedBackCount}개
-      </p>
+      <p css={feedbackTotalCountStyle}>누적 피드백 총 {totalFeedBackCount}개</p>
     </div>
   );
 };
