@@ -4,5 +4,5 @@ export const serviceClientWrapper = (theme: Theme): SerializedStyles => css`
   width: 425px;
   height: 620px;
   border-radius: 25px;
-  background-color: ${theme.colorPrimary};
+  background-color: ${theme.colorDefault};
 `;

@@ -9,10 +9,9 @@ type NavProps = {
   handleExit: () => void;
   image: string;
   name: string;
-  primary: boolean;
 };
 
-const Nav: FC<NavProps> = ({ handleExit, image, name, primary }) => {
+const Nav: FC<NavProps> = ({ handleExit, image, name }) => {
   const theme = useTheme();
 
   return (
@@ -21,7 +20,7 @@ const Nav: FC<NavProps> = ({ handleExit, image, name, primary }) => {
       <ExitBtn
         width="14px"
         height="14px"
-        color={primary ? 'white' : theme.colorPrimary}
+        color={theme.colorReverse}
         onClick={handleExit}
       />
     </nav>
