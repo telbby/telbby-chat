@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import type { Feedback } from '@/@types/project';
+import type { Feedback } from '@/types/project';
 
 import {
   feedbackItemWrapperStyle,

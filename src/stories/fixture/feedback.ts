@@ -1,4 +1,4 @@
-import type { Feedback } from '@/@types/project';
+import type { Feedback } from '@/types/project';
 
 export const feedbackFirst: Feedback = {
   id: 'sadfasdf',

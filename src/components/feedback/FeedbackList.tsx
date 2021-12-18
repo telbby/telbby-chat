@@ -4,7 +4,7 @@ import { useTheme } from '@emotion/react';
 import FeedbackItem from './FeedbackItem';
 import { feedbackListWrapperStyle, feedbackTotalCountStyle } from './style';
 
-import type { Feedback } from '@/@types/project';
+import type { Feedback } from '@/types/project';
 
 type FeedbackListProps = {
   feedbacks: Feedback[];
