@@ -20,10 +20,7 @@ const FeedbackList: FC<FeedbackListProps> = ({
   const theme = useTheme();
   return (
     <div>
-      <ul
-        css={feedbackListWrapperStyle}
-        style={feedbacks.length <= 2 ? { justifyContent: 'center' } : {}}
-      >
+      <ul css={feedbackListWrapperStyle(feedbacks.length <= 2)}>
         {feedbacks.map(({ id, title, contents, userName }) => {
           return (
             <FeedbackListItem

@@ -1,6 +1,8 @@
 import { css, SerializedStyles, Theme } from '@emotion/react';
 
-export const feedbackListWrapperStyle = css`
+export const feedbackListWrapperStyle = (
+  lessThanTwoItems: boolean,
+): SerializedStyles => css`
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -10,6 +12,7 @@ export const feedbackListWrapperStyle = css`
   scrollbar-width: none;
   margin: 0;
   padding: 0 0.8rem;
+  justify-content: ${lessThanTwoItems ? 'center' : 'stretch'};
   &::-webkit-scrollbar {
     display: none;
   }
