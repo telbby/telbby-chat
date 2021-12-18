@@ -36,19 +36,19 @@ const Template: ComponentStory<typeof FeedbackList> = (args) => (
 
 const baseArgs = {
   feedbacks: [feedbackFirst, feedbackSecond, feedbackThird, badFeedback],
-  totalFeedBackCount: 4,
+  totalFeedbackCount: 4,
   primary: true,
 };
 
 const oneListArgs = {
   feedbacks: [feedbackFirst],
-  totalFeedBackCount: 1,
+  totalFeedbackCount: 1,
   primary: true,
 };
 
 const twoListArgs = {
   feedbacks: [feedbackFirst, feedbackSecond],
-  totalFeedBackCount: 2,
+  totalFeedbackCount: 2,
   primary: false,
 };
 

@@ -3,17 +3,21 @@ import React, { FC } from 'react';
 import type { Feedback } from '@/types/project';
 
 import {
-  feedbackItemWrapperStyle,
+  feedbackListItemWrapperStyle,
   feedbackTitleStyle,
   feedbackContentsStyle,
   feedbackUserNameStyle,
 } from './style';
 
-type FeedbackItemProps = Omit<Feedback, 'id'>;
+type FeedbackListItemProps = Omit<Feedback, 'id'>;
 
-const FeedbackItem: FC<FeedbackItemProps> = ({ title, contents, userName }) => {
+const FeedbackListItem: FC<FeedbackListItemProps> = ({
+  title,
+  contents,
+  userName,
+}) => {
   return (
-    <li css={feedbackItemWrapperStyle}>
+    <li css={feedbackListItemWrapperStyle}>
       <p css={feedbackTitleStyle}>#{title}</p>
       <p css={feedbackContentsStyle}>&quot;{contents}&quot;</p>
       <p css={feedbackUserNameStyle}>{userName}</p>
@@ -21,4 +25,4 @@ const FeedbackItem: FC<FeedbackItemProps> = ({ title, contents, userName }) => {
   );
 };
 
-export default FeedbackItem;
+export default FeedbackListItem;

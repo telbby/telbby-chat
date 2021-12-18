@@ -2,7 +2,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import FeedbackItem from '@/components/feedback/FeedbackItem';
+import FeedbackListItem from '@/components/feedback/FeedbackListItem';
 
 // fixture
 import {
@@ -14,11 +14,11 @@ import {
 
 export default {
   title: 'Feedback Item',
-  component: FeedbackItem,
-} as ComponentMeta<typeof FeedbackItem>;
+  component: FeedbackListItem,
+} as ComponentMeta<typeof FeedbackListItem>;
 
-const Template: ComponentStory<typeof FeedbackItem> = (args) => (
-  <FeedbackItem {...args} />
+const Template: ComponentStory<typeof FeedbackListItem> = (args) => (
+  <FeedbackListItem {...args} />
 );
 
 export const FirstFeedbackItem = Template.bind({});

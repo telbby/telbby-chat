@@ -1,21 +1,21 @@
 import React, { FC } from 'react';
 import { useTheme } from '@emotion/react';
 
-import FeedbackItem from './FeedbackItem';
+import FeedbackListItem from './FeedbackListItem';
 import { feedbackListWrapperStyle, feedbackTotalCountStyle } from './style';
 
 import type { Feedback } from '@/types/project';
 
 type FeedbackListProps = {
   feedbacks: Feedback[];
-  totalFeedBackCount: number;
+  totalFeedbackCount: number;
   primary: boolean;
 };
 
 const FeedbackList: FC<FeedbackListProps> = ({
   feedbacks,
   primary,
-  totalFeedBackCount,
+  totalFeedbackCount,
 }) => {
   const theme = useTheme();
   return (
@@ -26,7 +26,7 @@ const FeedbackList: FC<FeedbackListProps> = ({
       >
         {feedbacks.map(({ id, title, contents, userName }) => {
           return (
-            <FeedbackItem
+            <FeedbackListItem
               key={`feedback-${id}`}
               title={title}
               contents={contents}
@@ -41,7 +41,7 @@ const FeedbackList: FC<FeedbackListProps> = ({
           { color: primary ? theme.colorSubLight : theme.colorSuccess },
         ]}
       >
-        누적 피드백 총 {totalFeedBackCount}개
+        누적 피드백 총 {totalFeedbackCount}개
       </p>
     </div>
   );

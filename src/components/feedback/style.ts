@@ -26,7 +26,7 @@ export const feedbackTotalCountStyle = css`
   padding: 1em;
 `;
 
-export const feedbackItemWrapperStyle = css`
+export const feedbackListItemWrapperStyle = css`
   width: 180px;
   height: 200px;
   box-sizing: border-box;
