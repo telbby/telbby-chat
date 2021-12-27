@@ -17,7 +17,7 @@ export const chatMainWrapperStyle = (theme: Theme): SerializedStyles => css`
   }
 `;
 
-export const mainNavStyle = css`
+export const mainNavStyle = (theme: Theme): SerializedStyles => css`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +27,8 @@ export const mainNavStyle = css`
     height: 35px;
     border-radius: 50%;
     object-fit: cover;
+    background-color: ${theme.colorReverse};
+    border: 1px solid ${theme.colorReverse};
   }
 `;
 
