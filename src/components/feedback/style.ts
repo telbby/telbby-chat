@@ -22,11 +22,12 @@ export const feedbackListWrapperStyle = (
   }
 `;
 
-export const feedbackTotalCountStyle = css`
+export const feedbackTotalCountStyle = (theme: Theme): SerializedStyles => css`
   font-size: 10px;
   text-decoration: underline;
   text-align: right;
   padding: 1em;
+  color: ${theme.colorFeedbackCount};
 `;
 
 export const feedbackListItemWrapperStyle = css`
@@ -63,7 +64,7 @@ export const feedbackUserNameStyle = (theme: Theme): SerializedStyles => css`
   direction: rtl;
   font-family: ${theme.fontCoding};
   font-size: 10px;
-  color: ${theme.colorGray3};
+  color: ${theme.colorSubGray};
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

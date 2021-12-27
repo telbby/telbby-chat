@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
@@ -37,19 +36,16 @@ const Template: ComponentStory<typeof FeedbackList> = (args) => (
 const baseArgs = {
   feedbacks: [feedbackFirst, feedbackSecond, feedbackThird, badFeedback],
   totalFeedbackCount: 4,
-  primary: true,
 };
 
 const oneListArgs = {
   feedbacks: [feedbackFirst],
   totalFeedbackCount: 1,
-  primary: true,
 };
 
 const twoListArgs = {
   feedbacks: [feedbackFirst, feedbackSecond],
   totalFeedbackCount: 2,
-  primary: false,
 };
 
 export const BaseScrollableFeedbackList = Template.bind({});
