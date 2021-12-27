@@ -13,5 +13,5 @@ export type Project = {
   image: string;
   primary: boolean;
   feedbackList: Feedback[];
-  totalFeedBackCount: number;
+  totalFeedbackCount: number;
 };

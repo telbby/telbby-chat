@@ -6,7 +6,7 @@ import ProjectIntro from './ProjectIntro';
 import BottomButton from './BottomButton';
 import FeedbackList from '@/components/feedback/FeedbackList';
 
-import type { Project } from '@/@types/project';
+import type { Project } from '@/types/project';
 
 type PresentationalMainProps = {
   project: Project;
@@ -22,7 +22,7 @@ const PresentationalMain: FC<PresentationalMainProps> = ({
     image,
     description,
     feedbackList: feedbacks,
-    totalFeedBackCount,
+    totalFeedbackCount,
   } = project;
 
   return (
@@ -31,7 +31,7 @@ const PresentationalMain: FC<PresentationalMainProps> = ({
       <ProjectIntro name={name} description={description} />
       <FeedbackList
         feedbacks={feedbacks}
-        totalFeedBackCount={totalFeedBackCount}
+        totalFeedbackCount={totalFeedbackCount}
       />
       <BottomButton />
     </div>

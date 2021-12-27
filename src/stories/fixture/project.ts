@@ -1,6 +1,6 @@
 import telbbyLogo from '../assets/images/logo.png';
 import jiyong from '../assets/images/jiyong.png';
-import type { Project } from '@/@types/project';
+import type { Project } from '@/types/project';
 
 import {
   feedbackFirst,
@@ -25,7 +25,7 @@ export const mockProejctFirst: Project = {
   image: telbbyLogo,
   primary: false,
   feedbackList: mockFeedbacks,
-  totalFeedBackCount: 5,
+  totalFeedbackCount: 5,
 };
 
 export const mockProejctSecond: Project = {
@@ -37,5 +37,5 @@ export const mockProejctSecond: Project = {
   image: jiyong,
   primary: false,
   feedbackList: mockFeedbacks,
-  totalFeedBackCount: 12,
+  totalFeedbackCount: 12,
 };
