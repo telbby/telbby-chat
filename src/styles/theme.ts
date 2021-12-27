@@ -21,7 +21,7 @@ const defaultTheme = {
 };
 
 const primaryTheme = {
-  colorOriginPrimary: defaultTheme.colorPrimary,
+  ...defaultTheme,
   colorDefault: defaultTheme.colorPrimary,
   colorReverse: defaultTheme.colorBg,
   colorGray: defaultTheme.colorGray4,
@@ -31,13 +31,10 @@ const primaryTheme = {
   colorBottomWrapper: defaultTheme.colorSubLight,
   colorBottomText: defaultTheme.colorBrown,
   colorBottomButton: defaultTheme.colorPrimary,
-
-  fontBasic: defaultTheme.fontBasic,
-  fontCoding: defaultTheme.fontCoding,
-  fontCodingBold: defaultTheme.fontCodingBold,
+  colorChatText: defaultTheme.colorGray1,
 };
 const subTheme = {
-  colorOriginPrimary: defaultTheme.colorPrimary,
+  ...defaultTheme,
   colorDefault: defaultTheme.colorPrimaryLight,
   colorReverse: defaultTheme.colorPrimary,
   colorGray: defaultTheme.colorGray1,
@@ -47,10 +44,7 @@ const subTheme = {
   colorBottomWrapper: defaultTheme.colorPrimary,
   colorBottomText: defaultTheme.colorWhite,
   colorBottomButton: defaultTheme.colorSubLight,
-
-  fontBasic: defaultTheme.fontBasic,
-  fontCoding: defaultTheme.fontCoding,
-  fontCodingBold: defaultTheme.fontCodingBold,
+  colorChatText: defaultTheme.colorWhite,
 };
 
 export default defaultTheme;

@@ -45,7 +45,7 @@ export const feedbackListItemWrapperStyle = css`
 
 export const feedbackTitleStyle = (theme: Theme): SerializedStyles => css`
   font-size: 12px;
-  color: ${theme.colorOriginPrimary};
+  color: ${theme.colorPrimary};
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
